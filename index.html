@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Style for the sections */
+        
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="calculatorWrap">
+            <!-- InstanceBeginEditable name="Calculator" -->
+            <form action="metricunits.php" method="post" class="calculatorForm" id="CalculatorForm" name="CalculatorForm" onsubmit="calculateButtonWorking()">
+                <div itemprop="name" class="calculatorTitle">Convert Metric Units</div>
+                <div class="calculatorInputs">
+                    <div class="calculatorInputGroup">
+                        <label for="input_value">Value to Convert:</label>
+                        <br>
+                        <span class="note smaller">a real number or scientific notation</span>
+                        <br>
+                        <input id="input_value" name="input_value" value="" class="nmbr_real real" type="text" title="real number" autofocus="" required="">
+                    </div>
+                    <div class="calculatorInputGroup">
+                        <label for="input">From:</label> <select name="input" id="input" size="1">
+                            <option value="yotta">yotta</option>
+                            <option value="zetta">zetta</option>
+                            <option value="exa">exa</option>
+                            <option value="peta">peta</option>
+                            <option value="tera">tera</option>
+                            <option value="giga">giga</option>
+                            <option value="mega">mega</option>
+                            <option value="kilo" selected="selected">kilo</option>
+                            <option value="hecto">hecto</option>
+                            <option value="deca">deca</option>
+                            <option value="base-1">base unit</option>
+                            <option value="deci">deci</option>
+                            <option value="centi">centi</option>
+                            <option value="milli">milli</option>
+                            <option value="micro">micro</option>
+                            <option value="nano">nano</option>
+                            <option value="pico">pico</option>
+                            <option value="femto">femto</option>
+                            <option value="atto">atto</option>
+                            <option value="zepto">zepto</option>
+                            <option value="yocto">yocto</option>
+                        </select>
+                    </div>
+                    <div class="calculatorInputGroup">
+                        <label for="output">To:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <select name="output" id="output" size="1">
+                            <option value="yotta">yotta</option>
+                            <option value="zetta">zetta</option>
+                            <option value="exa">exa</option>
+                            <option value="peta">peta</option>
+                            <option value="tera">tera</option>
+                            <option value="giga">giga</option>
+                            <option value="mega">mega</option>
+                            <option value="kilo">kilo</option>
+                            <option value="hecto">hecto</option>
+                            <option value="deca">deca</option>
+                            <option value="base-1" selected="selected">base unit</option>
+                            <option value="deci">deci</option>
+                            <option value="centi">centi</option>
+                            <option value="milli">milli</option>
+                            <option value="micro">micro</option>
+                            <option value="nano">nano</option>
+                            <option value="pico">pico</option>
+                            <option value="femto">femto</option>
+                            <option value="atto">atto</option>
+                            <option value="zepto">zepto</option>
+                            <option value="yocto">yocto</option>
+                        </select>
+                    </div>
+                </div>
+                <!--
+                Buttons and Answer and Links
+                -->
+                <div class="calculatorButton floatRight" id="actionCalculate">
+                    <input type="submit" value="Calculate" class="btn" name="calculateButton" id="calculateButton">
+                </div>
+                <div class="calculatorButton floatLeft" id="actionClear">
+                    <input type="reset" name="reset" value="Clear" class="btn" onclick="return resetCalculator(this.form);">
+                </div>
+                <div class="clearBoth"></div>
+                <div id="calculatorAnswer">
+                    Answer:
+                    <br>
+                    <div id="answer"><br></div>
+                </div>
+                <input type="hidden" name="action" value="solve">
+                <input type="hidden" name="page_id" value="MTY3MzYzOTc2Mw==">
+            </form>
+            <!-- InstanceEndEditable -->
+
+            <div data-swiftype-index="false" class="alignRight"><br></div>
+
+
+            <div id="titleSmall" class="alignRight">blurb</div>
+        </div>
+        <script src="index.js"></script>
+    </div>
+
+</body>
+</html>
