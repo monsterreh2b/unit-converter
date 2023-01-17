@@ -15,6 +15,26 @@ function convertMetersFeet(number) {
     return number * 3.281;
 }
 
+function convertFeetMeters(number) {
+    return number / 3.281;
+}
+
+function convertLitersGallons(number) {
+    return number * 0.264172;
+}
+
+function convertGallonsLiters(number) {
+    return number * 3.78541;
+}
+
+function convertKilosPounds(number) {
+    return number * 2.20462;
+}
+
+function convertPoundsKilos(number) {
+    return number / 2.20462;
+}
+
 function showOption() {
     let selectedOption = document.getElementById("input");
     let output = selectedOption.value;
@@ -27,6 +47,31 @@ function showOption() {
         let metersFeetAnswer = convertMetersFeet(amountValue);
         answer.innerHTML = metersFeetAnswer.toFixed(3);
 
+    }
+
+    else if (output === "feet to meters") {
+        let feetMetersAnswer = convertFeetMeters(amountValue);
+        answer.innerHTML = feetMetersAnswer.toFixed(3);
+    }
+
+    else if (output === "liters to gallons") {
+        let litersGallonsAnswer = convertLitersGallons(amountValue);
+        answer.innerHTML = litersGallonsAnswer.toFixed(3);
+    }
+
+    else if (output === "gallons to liters") {
+        let gallonsLitersAnswer = convertGallonsLiters(amountValue);
+        answer.innerHTML = gallonsLitersAnswer.toFixed(3);
+    }
+
+    else if (output === "kilos to pounds") {
+        let kilosPoundsAnswer = convertKilosPounds(amountValue);
+        answer.innerHTML = kilosPoundsAnswer.toFixed(3);
+    }
+
+    else if (output === "pounds to kilos") {
+        let poundsKilosAnswer = convertPoundsKilos(amountValue);
+        answer.innerHTML = poundsKilosAnswer.toFixed(3);
     }
 }
 
