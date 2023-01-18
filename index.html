@@ -2,19 +2,23 @@
 <html>
 <head>
     <link rel="stylesheet" href="index.css">
-   
+
 </head>
+
+</html>
 <body>
+
     <div id="outer">
         <div id="calculatorWrap">
 
             <form class="calculate">
+                <div itemprop="name" class="calculatorTitle">Metric Unit Calculator</div>
                 <label for="input_value">Value to Convert:</label>
                 <br>
                 <span class="note smaller">a real number or scientific notation</span>
                 <br>
-                <input type="number" name="amount" id="amount" min="0" max="1000000">
-                <div class="calculatorInputGroup">
+                <input type="number" name="amount" id="amount" min="0" max="1000000" class="moveDown">
+                <div class="calculatorInputGroup moveDown">
                     <label for="input">Convert From --&gt; </label> <select name="input" id="input" size="1">
                         <option value="meters to feet">meters to feet</option>
                         <option value="feet to meters">feet to meters</option>
@@ -24,13 +28,13 @@
                         <option value="pounds to kilos">pounds to kilos</option>
                     </select>
                 </div>
-                <button type="submit" class="btn">Calculate</button><div class="calculatorButton floatLeft" id="actionClear">
-                                                                        <div><input type="reset" name="reset" value="Clear" class="btn" onclick="return resetCalculator(this.form);"></div>
+                <button type="submit" class="btn moveDown">Calculate</button><div class="calculatorButton floatLeft" id="actionClear">
+                    <div class="moveDown"><input type="reset" name="reset" value="Clear" class="btn" id="clear"></div>
                 </div>
-            </form><div id="calculatorAnswer">
+            </form><div id="calculatorAnswer" class="moveDown">
                 Answer:
                 <br>
-                <div id="answer"></div>
+                <div id="answer" class="moveDown bolderBigger"></div>
             </div>
 
 
@@ -44,5 +48,7 @@
 
 
 
+
+
+
 </body>
-</html>

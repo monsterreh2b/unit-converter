@@ -11,8 +11,11 @@ body {
 div#calculatorWrap {
     width: 308px;
     height: 350px;
-    border: 1px solid red;
-    
+    background: #f0f0f0;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 0.9em;
 }
 
 div#outer {
@@ -21,4 +24,27 @@ div#outer {
     justify-content: center;
     text-align-last: center;
     margin-top: 5%;
+}
+
+div.calculatorTitle {
+    color: #fff;
+    background-color: #5cb85c;
+    font-weight: bold;
+    margin: -0.3em -0.3em 1em -0.3em;
+    border-bottom: 1px solid #aaa;
+    padding: 0.3em;
+    text-align: center;
+    border-radius: 4px;
+    _color: #333;
+    _background-color: #FFF;
+    _border: 1px solid #aaa;
+}
+
+.moveDown {
+    margin-top: 20px;
+}
+
+.bolderBigger {
+    font-weight: 700;
+    font-size: 28pt;
 }

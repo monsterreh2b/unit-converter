@@ -9,6 +9,8 @@ console.log(amount);
 
 const form = document.querySelector(".calculate");
 
+const clear = document.getElementById("clear");
+
 const answer = document.getElementById("answer");
 
 function convertMetersFeet(number) {
@@ -95,4 +97,9 @@ form.addEventListener("submit", function (e) {
 
 
 
+});
+
+clear.addEventListener("click", function () {
+    //console.log("clear")
+    answer.innerHTML = "";
 });
